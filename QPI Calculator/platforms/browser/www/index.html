@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QPI Calculator</title>
+
+  <script src="lib/onsen/js/onsenui.js"></script>
+
+  <script src="./lib/redux.min.js"></script>
+  <script src="./main.js"></script>
+
+  
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .button {
+      display: flex;
+      flex: 1 1 calc(25% - 4px);
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin: 2px;
+      opacity: 0.7;
+    }
+    ons-row {
+      background: rgba(7, 20, 94, 0.692);
+    }
+    .actionButton {
+      opacity: 1;
+    }
+    .screen {
+      font-size: 40px;
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+    .screen2 {
+      font-size: 40px;
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+<script>
+  //if(== 2)
+</script>
+  <!-- First navigation component: Navigator. This will remain always on top of the app. -->
+  <ons-page>
+    <ons-row style="height: 10%">
+      <div id="screen" class="screen" > </div>
+    </ons-row>
+    <ons-row style="height: 10%">
+      <div id="screen2" class="screen2" > </div>
+    </ons-row>
+    <ons-row style="height:80%">
+      <ons-row style=" height: 20%">
+        <ons-button onclick="document.getElementById('screen').innerHTML = '(A)';"> A </ons-button> 
+        <ons-button onclick="document.getElementById('screen').innerHTML = '(B+)';"> B+ </ons-button> 
+        <ons-button onclick="document.getElementById('screen').innerHTML = '(B)';"> B </ons-button>       
+      </ons-row>
+      <ons-row style=" height: 20%">
+        <ons-button  onclick="document.getElementById('screen').innerHTML = '(C+)';"> C+ </ons-button> 
+        <ons-button  onclick="document.getElementById('screen').innerHTML = '(C)';"> C </ons-button> 
+        <ons-button  onclick="document.getElementById('screen').innerHTML = '(D)';"> D </ons-button>       
+      </ons-row>
+      <ons-row style=" height: 20%">
+        <ons-button  onclick="document.getElementById('screen').innerHTML = '(F/FD)';"> F/FD </ons-button> 
+        <ons-button  onclick="clean()" class="actionButton"> CLR </ons-button> 
+        <ons-button onclick="document.getElementById('screen2').innerHTML = " class="actionButton"> = </ons-button>       
+      </ons-row>
+      </ons-row-->
+    </ons-row>
+  </ons-page>
+</body>
+
+</html>
